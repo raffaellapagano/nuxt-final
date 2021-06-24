@@ -106,7 +106,6 @@ export const actions = {
     const { data } = await this.$axios.get(
       'http://jsonplaceholder.typicode.com/users'
     )
-    console.log(data)
     commit('SetUsers', data)
   },
   //  Lista albums da API
@@ -114,20 +113,6 @@ export const actions = {
     const { data } = await this.$axios.get(
       'http://jsonplaceholder.typicode.com/photos'
     )
-    console.log(data)
     commit('SetAlbums', data)
   }
-
-  // loadAlbums ({ commit }) {
-  //   this.axios
-  //     .get('http://jsonplaceholder.typicode.com/photos', {
-  //       headers: {
-  //         'Ocp-Apim-Subscription-Key': 'your key'
-  //       }
-  //     })
-  //     .then(response => response.data)
-  //     .then((albums) => {
-  //       commit('SetAlbums', albums)
-  //     })
-  // }
 }

@@ -1,24 +1,25 @@
 <template>
   <div>
-
     <div class=" flex flex-column">
-    <header class="">
-      <Header></Header>
-    </header>
-      <Nuxt class="text-center"></Nuxt>
-    <footer class="">
-      <Footer></Footer>
-    </footer>
-  </div>
+      <header class="">
+        <HeaderComponent />
+      </header>
+      <section>
+        <Nuxt class="text-center" />
+      </section>
+      <footer class="">
+        <FooterComponent />
+      </footer>
+    </div>
   </div>
 </template>
 
 <script>
-import Header from '../components/Header.vue'
-import Footer from '../components/Footer.vue'
+import HeaderComponent from '../components/Header.vue'
+import FooterComponent from '../components/Footer.vue'
 
 export default {
-  components: { Header, Footer }
+  components: { HeaderComponent, FooterComponent }
 }
 </script>
 <style>

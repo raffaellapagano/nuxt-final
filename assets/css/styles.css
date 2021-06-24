@@ -4,14 +4,23 @@
     box-sizing: border-box;
 }
 
-html, body{
+html{
     height: 100vh;
 }
 
-.home{
+body{
     height: 100%;
+}
+
+.home{
+    height: 100vh;
+}
+
+.btn {
+    background: rgb(12, 214, 147);
   }
 
+/* Transition pages */
 .page-enter-active,
 .page-leave-active {
   transition: opacity 0.5s;

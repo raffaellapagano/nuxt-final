@@ -70,7 +70,7 @@
             align-items-center
           "
         >
-          <div id="search" class="bg-white rounded-lg">
+          <div id="search">
             <ejs-autocomplete
               id="inputSearch"
               v-model="search"
@@ -152,10 +152,10 @@ export default {
             }
           })
         }
-        if (this.verify === false) {
-          alert('No users')
-          this.$router.push('/')
-        }
+      }
+      if (this.verify === false) {
+        alert('No users')
+        this.$router.push('/')
       }
     },
     StringInput () {
@@ -183,16 +183,19 @@ export default {
   }
 }
 
+#search{
+  background-color:white;
+  border-radius: 5px 0px 0px 5px;
+  height: 40px;
+}
+
 #inputSearch{
   width: 200px;
-  height: 20px;
-  margin: 2px;
-  background: white;
-  border-radius: 5px;
 }
 
 #buttonSearch{
   height: 40px;
+  border-radius: 0px 5px 5px 0px;
 }
 
 #buttonSearch {

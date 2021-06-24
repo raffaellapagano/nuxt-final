@@ -6,9 +6,7 @@
       alt=""
       @click="
         Show(album.id);
-        SetConsultedPictures(album.title);
-      "
-    />
+        SetConsultedPictures(album.title);"/>
   </div>
 </template>
 

@@ -1,29 +1,35 @@
 <template>
   <div>
-    <button class="btn btn-primary" @click="Anterior()">Back</button>
-    <h1 class="font-weight-bold mt-3">Users</h1>
+    <button
+      class="btn btn-primary"
+      @click="Anterior()"
+    >
+      Back
+    </button>
+    <h1
+      class="font-weight-bold mt-3"
+    >
+      Users
+    </h1>
 
     <div class="row p-3 d-flex justify-content-center">
-      <Cliente
+      <ClienteComponent
         v-for="user in users"
-        :user="user"
         :key="user.id"
+        :user="user"
         class="col-sm-3 mt-3"
-      ></Cliente>
+      />
     </div>
   </div>
 </template>
 
 <script>
 import Vuex from 'vuex'
-import Cliente from '../components/ClientComponent'
+import ClienteComponent from '../components/ClientComponent'
 
 export default {
   components: {
-    Cliente
-  },
-  computed: {
-    ...Vuex.mapState(['users', 'consulted', 'consultedUsers'])
+    ClienteComponent
   },
   data () {
     return {
@@ -32,6 +38,9 @@ export default {
         required: true
       }
     }
+  },
+  computed: {
+    ...Vuex.mapState(['users', 'consulted', 'consultedUsers'])
   },
   methods: {
     Anterior () {
