@@ -17,7 +17,7 @@
 
 <script>
 import Vuex from 'vuex'
-import Consulted from '.././components/Consulted'
+import Consulted from '.././components/ConsultedComponent'
 
 export default {
   name: 'Home',

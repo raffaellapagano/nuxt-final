@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     Anterior () {
-      this.$router.go(-1)
+      this.$router.push('/')
     },
     Show (proId) {
       this.$router.push({

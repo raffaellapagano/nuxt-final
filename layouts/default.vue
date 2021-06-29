@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class=" flex flex-column">
-      <header class="">
+      <header>
         <HeaderComponent />
       </header>
       <section>
         <Nuxt class="text-center" />
       </section>
-      <footer class="">
+      <footer>
         <FooterComponent />
       </footer>
     </div>
@@ -15,13 +15,14 @@
 </template>
 
 <script>
-import HeaderComponent from '../components/Header.vue'
-import FooterComponent from '../components/Footer.vue'
+import HeaderComponent from '../components/HeaderComp.vue'
+import FooterComponent from '../components/FooterComp.vue'
 
 export default {
   components: { HeaderComponent, FooterComponent }
 }
 </script>
+
 <style>
 html {
   font-family:

@@ -1,5 +1,7 @@
 <template>
-  <div id="nav">
+  <div
+    id="nav"
+  >
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-dark p-3"
     >
@@ -11,8 +13,8 @@
           src="../assets/IT logo.png"
           width="150"
           alt=""
-        ></img
-        ></a>
+        />
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -166,21 +168,17 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
 
 @import url(https://cdn.syncfusion.com/ej2/material.css);
 
 #nav{
   padding: 30px;
+}
 
-  a {
-    font-weight: bold;
-    color: #f9fbfc;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+#nav a {
+  font-weight: bold;
+  color: #f9fbfc;
 }
 
 #search{
@@ -196,9 +194,5 @@ export default {
 #buttonSearch{
   height: 40px;
   border-radius: 0px 5px 5px 0px;
-}
-
-#buttonSearch {
-  height: 40px;
 }
 </style>

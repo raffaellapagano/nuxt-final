@@ -19,13 +19,12 @@
 import Vuex from 'vuex'
 
 export default {
-  name: 'Cliente',
   props: {
     user: Object
   },
   methods: {
     Anterior () {
-      this.$router.go(-1)
+      this.$router.push('/')
     },
     Show (proId) {
       this.$router.push({
